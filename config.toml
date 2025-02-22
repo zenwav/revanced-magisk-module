@@ -45,7 +45,6 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 
 [YouTube-Extended]
 app-name = "YouTube"
-arch = "arm64-v8a"
 patches-source = "inotia00/revanced-patches"
 cli-source = "inotia00/revanced-cli"
 integrations-source = "inotia00/revanced-integrations"
