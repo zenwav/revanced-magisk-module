@@ -87,7 +87,13 @@ enabled = false
 apkmirror-dlurl = "https://www.apkmirror.com/apk/smart-launcher-team/icon-pack-studio/"
 
 [Infinity]
+enabled = false
 apkmirror-dlurl = "https://apkmirror.com/apk/docile-alligator/infinity-for-reddit/"
+patcher-args = "--options=client-id=$ID --enable='Spoof client' "
+# arch = "arm64-v8a"
+
+[Infinity+]
+apkmirror-dlurl = "https://www.apkmirror.com/apk/docile-alligator/infinity-for-reddit-plus/"
 patcher-args = "--options=client-id=$ID --enable='Spoof client' "
 # arch = "arm64-v8a"
 
