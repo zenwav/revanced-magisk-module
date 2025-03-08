@@ -1,6 +1,6 @@
 {
   "version": "v8.05.51 (patches: 5.13.0)",
-  "versionCode": 14,
-  "zipUrl": "https://github.com/zenwav/revanced-magisk-module/releases/download/14/music-revanced-magisk-v8.05.51-all.zip",
+  "versionCode": 15,
+  "zipUrl": "https://github.com/zenwav/revanced-magisk-module/releases/download/15/music-revanced-magisk-v8.05.51-all.zip",
   "changelog": "https://raw.githubusercontent.com/zenwav/revanced-magisk-module/update/build.md"
 }
