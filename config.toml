@@ -8,8 +8,8 @@ parallel-jobs = 1
 
 [YouTube]
 build-mode = "module"
-excluded-patches = ""
-included-patches = ""
+#excluded-patches = ""
+#included-patches = ""
 version = "auto"
 # arch = "arm64-v8a"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
