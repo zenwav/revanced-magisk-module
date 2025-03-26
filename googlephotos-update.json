@@ -1,6 +1,6 @@
 {
-  "version": "v7.21.0.737764319 (patches: 5.15.0)",
-  "versionCode": 19,
-  "zipUrl": "https://github.com/zenwav/revanced-magisk-module/releases/download/19/googlephotos-revanced-magisk-v7.21.0.737764319-all.zip",
+  "version": "v7.22.0.739755607 (patches: 5.16.1)",
+  "versionCode": 20,
+  "zipUrl": "https://github.com/zenwav/revanced-magisk-module/releases/download/20/googlephotos-revanced-magisk-v7.22.0.739755607-all.zip",
   "changelog": "https://raw.githubusercontent.com/zenwav/revanced-magisk-module/update/build.md"
 }
