@@ -38,6 +38,7 @@ cli-source = "ReVanced/revanced-cli"
 
 [Spotify]
 uptodown-dlurl = "https://spotify.en.uptodown.com/android"
+version = "9.0.36.683"
 
 # dont build on gh actions (https://github.com/j-hc/revanced-magisk-module/issues/554)
 [Music-Extended]
