@@ -1,4 +1,4 @@
-Infinity-Plus: 8.0.2  
+Infinity-Plus: 8.0.3  
 YouTube: 20.13.41  
 
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
@@ -7,10 +7,10 @@ Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach root ReVanc
 [revanced-magisk-module](https://github.com/j-hc/revanced-magisk-module)
   
 CLI: ReVanced/revanced-cli-5.0.1-all.jar  
-Patches: ReVanced/patches-5.35.0.rvp  
-[Changelog](https://github.com/ReVanced/revanced-patches/releases/tag/v5.35.0)
+Patches: ReVanced/patches-5.36.0.rvp  
+[Changelog](https://github.com/ReVanced/revanced-patches/releases/tag/v5.36.0)
 
 CLI: j-hc/revanced-cli-5.0.0-all.jar    
 
 Skipped:  
-Patches: inotia00/patches-5.10.1.rvp    
+Patches: inotia00/patches-5.10.1.rvp      
