@@ -1,6 +1,6 @@
 {
-  "version": "v20.14.43 (patches: 5.44.0)",
-  "versionCode": 59,
-  "zipUrl": "https://github.com/zenwav/revanced-magisk-module/releases/download/59/youtube-revanced-magisk-v20.14.43-all.zip",
+  "version": "v20.14.43 (patches: 5.45.0)",
+  "versionCode": 60,
+  "zipUrl": "https://github.com/zenwav/revanced-magisk-module/releases/download/60/youtube-revanced-magisk-v20.14.43-all.zip",
   "changelog": "https://raw.githubusercontent.com/zenwav/revanced-magisk-module/update/build.md"
 }
