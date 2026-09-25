@@ -7,7 +7,7 @@ echo ""
 
 DFILE="$MODDIR/disabled_by_action"
 
-if [ -z "$(get_mounts)" ]; then
+if ! is_injected; then
 	rm -f "$DFILE"
 	if mount_rv_now; then
 		echo "* Enabled successfully"
@@ -16,7 +16,11 @@ if [ -z "$(get_mounts)" ]; then
 		echo "* Failed to enable"
 	fi
 	echo ""
-	get_mounts
+	if has_nomount; then
+		$(get_nm_bin) rule list 2>/dev/null | grep -F " -> $RVPATH"
+	else
+		get_mounts
+	fi
 else
 	touch "$DFILE"
 	umount_all

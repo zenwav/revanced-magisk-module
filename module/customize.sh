@@ -142,9 +142,23 @@ ui_print "* Mounting $PKG_NAME"
 mkdir -p "/data/adb/rvhc"
 mv -f "$MODPATH/base.apk" "$RVPATH"
 
-if ! op=$(su -M -c mount -o bind "$RVPATH" "$BASEPATH/base.apk" 2>&1); then
-	ui_print "ERROR: Mount failed!"
-	ui_print "$op"
+if has_nomount; then
+	local_nm=$(get_nm_bin)
+	ui_print "* Injecting via NoMount (VFS redirection)"
+	"$local_nm" rule del "$BASEPATH/base.apk" >/dev/null 2>&1 || :
+	if ! op=$("$local_nm" rule add "$BASEPATH/base.apk" "$RVPATH" 2>&1); then
+		ui_print "WARNING: NoMount injection failed, falling back to bind mount..."
+		ui_print "$op"
+		if ! op=$(su -M -c mount -o bind "$RVPATH" "$BASEPATH/base.apk" 2>&1); then
+			ui_print "ERROR: Mount failed!"
+			ui_print "$op"
+		fi
+	fi
+else
+	if ! op=$(su -M -c mount -o bind "$RVPATH" "$BASEPATH/base.apk" 2>&1); then
+		ui_print "ERROR: Mount failed!"
+		ui_print "$op"
+	fi
 fi
 am force-stop "$PKG_NAME"
 
