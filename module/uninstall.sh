@@ -27,6 +27,5 @@ if [ -n "$NM_BIN" ] && "$NM_BIN" version >/dev/null 2>&1; then
 fi
 
 rm -f "$RVPATH"
-rmdir "/data/adb/rvhc" 2>/dev/null || :
 
 rm -f "/data/adb/post-fs-data.d/$PKG_NAME-uninstall.sh"

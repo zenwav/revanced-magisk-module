@@ -11,7 +11,6 @@ if ! is_injected; then
 	rm -f "$DFILE"
 	if mount_rv_now; then
 		echo "* Enabled successfully"
-		cp -f "$MODDIR/module.prop.orig" "$MODDIR/module.prop"
 	else
 		echo "* Failed to enable"
 	fi
